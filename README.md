@@ -10,7 +10,7 @@ To outline the process, the PEB walk for resolving the addresses of LoadLibraryA
 * Once the entry for kernel32.dll is found, extract its base address.
 * Manually parse the export table of kernel32.dll to resolve the addresses of LoadLibraryA and GetProcAddress.
 
-  ## Injection
+## Injection
 
 1) Get the handle of process using OpenProcess.
 2) Allocate RWX memory region in remote process using VirtuaAllocEX
